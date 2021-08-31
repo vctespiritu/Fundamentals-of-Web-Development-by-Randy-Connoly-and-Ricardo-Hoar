@@ -1,8 +1,6 @@
 /* add valiation checks here */
 $(function(){
 
-    console.log("Here");
-
     var firstName = $('[name="firstname"]');
     var lastName = $('[name="lastname"]');
     var phoneNumber = $('[name="phone"]');
