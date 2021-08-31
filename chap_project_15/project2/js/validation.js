@@ -1,6 +1,5 @@
 /* add valiation checks here */
 $(function(){
-
     
     var firstName = $('[name="firstname"]');
     var lastName = $('[name="lastname"]');
