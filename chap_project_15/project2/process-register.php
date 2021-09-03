@@ -1,3 +1,8 @@
+<?php
+error_reporting(E_ALL);
+ini_set('display_errors', "1");
+
+?>
 <!DOCTYPE html>
 <html lang=en>
 <head>
@@ -33,9 +38,13 @@
               Thank you for registering!
             </div>
             <?php
+
             if ($_SERVER["REQUEST_METHOD"] == "POST") {
-                echo "<p><strong>" . $_POST['firstname'] . " " . $_POST['lastname'] . "</strong><br>";
-                echo $_POST['email'] . "</p>";
+                echo "<p>";
+                echo "<strong>" . $_POST['firstname'] . " " . $_POST['lastname'] . "</strong>";
+                echo "<br>";
+                echo $_POST['email'];
+                echo "</p>";
             }
             ?> 
           </div>
